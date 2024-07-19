@@ -1,0 +1,388 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="icon/themify-icons/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="img/GoodTrip5.png" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/content.css" />
+    <link rel="stylesheet" href="CSS/slider.css" />
+    <link rel="stylesheet" href="CSS/booking.css" />
+    <link rel="stylesheet" href="CSS/blog.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <title>| GoodTrip Việt Nam</title>
+  </head>
+  <body>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "112627521317796");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v12.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+    <div id="main">
+      <header id="header">
+        <!-- Begin menu nav -->
+        <div class="menu_top">
+          <a href="index.html"><img src="img/GoodTrip5.png" alt="Logonav" /></a>
+          <ul id="nav">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li>
+              <a href="#">Tìm kiếm</a>
+              <div class="container-1">
+                <input
+                  class="subnav timkiem"
+                  type="search"
+                  placeholder="Tìm kiếm..."
+                />
+              </div>
+            </li>
+            <li>
+              <a href="#services">
+                Dịch vụ
+                <i class="dow-icon ti-arrow-circle-down"></i>
+              </a>
+              <ul class="subnav">
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="goidulich.html">Gói du lịch</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="hotro.html">Hỗ trợ</a></li>
+          </ul>
+          <!-- User -->
+          <div
+            class="user-section"
+            onclick="alert('Hãy đăng nhập để sử dụng dịch vụ')"
+          >
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="login-btn">
+            <a href="UILogin.html">Đăng nhập</a>
+          </div>
+        </div>
+
+        <!-- End menu nav -->
+      </header>
+      <div id="slider">
+        <div class="banner-section">
+          <video playsinline autoplay muted loop>
+            z
+            <source src="img/introbanner.mp4" />
+          </video>
+          <div class="text-slider">
+            <h2 class="heading-slider">Hãy cùng nhau đi khắp việt nam</h2>
+            <h4>
+              Muốn đi nhanh hãy đi một mình | muốn đi xa hãy đi cùng GoodTrip
+            </h4>
+            <a class="morebanner-btn" href="#4diemden">Trải nghiệm</a>
+          </div>
+        </div>
+      </div>
+      <!-- Thiết kế content -->
+      <div id="content">
+        <!-- Banner content -->
+        <div class="introduct">
+          <div class="container">
+            <div class="content center">
+              <h5 class="t-black">ĐI KHẮP VIỆT NAM</h5>
+              <span class="line gold"></span>
+              <h2 class="t-content">
+                HÃY CÙNG NHAU ĐI
+                <span class="t-gold">DU LỊCH</span>
+              </h2>
+              <div id="4diemden"></div>
+              <h5 class="t-black bot-content">CHỌN CHO MÌNH MỘT ĐIỂM ĐẾN</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="layout-content">
+          <div class="box-container">
+            <div class="box">
+              <img src="img/TayBacBaner.png" alt="img-left" />
+              <div class="content">
+                <h3>SAPA</h3>
+                <p>
+                  Sapa là “nơi gặp gỡ giữa trời và đất” cảnh sắc thiên nhiên
+                  hùng vĩ bậc nhất miền Bắc
+                </p>
+                <a href="Sapa.html" class="btn">ĐẾN ĐÓ</a>
+              </div>
+            </div>
+          </div>
+          <div class="box-container">
+            <div class="box">
+              <img src="img/DaLatbanner.jpg" alt="img-left" />
+              <div class="content">
+                <h3>ĐÀ LẠT</h3>
+                <p>
+                  Đà lạt nổi tiếng với các đồi thông và "lời nguyền chia tay"
+                  của các cặp đôi!
+                </p>
+                <a href="Dalat.html" class="btn">ĐẾN ĐÓ</a>
+              </div>
+            </div>
+          </div>
+          <div class="box-container">
+            <div class="box">
+              <img src="img/DaNang.png" alt="img-left" />
+              <div class="content">
+                <h3>VŨNG TÀU</h3>
+                <p>
+                  Vũng Tàu từ lâu đã nổi tiếng với những bãi tắm đẹp và vô vàng
+                  những món ăn ngon.
+                </p>
+                <a href="vungtau.html" class="btn">ĐẾN ĐÓ!</a>
+              </div>
+            </div>
+          </div>
+          <div class="box-container">
+            <div class="box">
+              <img src="img/MienTayBanner.png" alt="img-left" />
+              <div class="content">
+                <h3>CẦN THƠ</h3>
+                <p>
+                  Cần Thơ được gọi là xứ Tây Đô. Nổi tiếng với cảnh sắc phong
+                  phú và trong lành.
+                </p>
+                <a href="cantho.html" class="btn">ĐẾN ĐÓ!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End banner content -->
+      </div>
+      <!-- Booking -->
+      <div id="booking">
+        <div class="introduct">
+          <div class="container">
+            <div class="content center">
+              <h5 class="t-black">ĐI KHẮP VIỆT NAM</h5>
+              <span class="line gold"></span>
+              <h2 class="t-content">
+                BẠN ĐÃ QUYẾT ĐỊNH
+                <span class="t-gold">ĐẶT VÉ</span>
+                CHƯA?
+              </h2>
+              <h5 class="t-black bot-content">
+                HÃY ĐIỀN THÔNG TIN ĐỂ CHÚNG TÔI CÓ THỂ HỖ TRỢ
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="container-booking">
+          <img src="img/bookimg.png" alt="" />
+          <form action="">
+            <div class="inputBox">
+              <h3>Bạn muốn đi đâu?</h3>
+              <input type="text" placeholder="chọn một địa điểm" />
+            </div>
+            <div class="inputBox">
+              <h3>Có bao nhiêu người cùng tham gia?</h3>
+              <input type="number" placeholder="số người tham gia du lịch" />
+            </div>
+            <div class="inputBox">
+              <h3>Ngày bắt đầu chuyến đi?</h3>
+              <input type="date" />
+            </div>
+            <div class="inputBox">
+              <h3>Ngày kết thúc chuyến đi?</h3>
+              <input type="date" />
+            </div>
+            <input
+              type="button"
+              onclick="alert('Trang web đang trong quá trình được phát triển!')"
+              class="btn"
+              value="Đặt ngay"
+            />
+          </form>
+        </div>
+      </div>
+      <!-- End Booking -->
+      <div id="blog">
+        <!-- hEADER OF BLOG -->
+        <div class="header">
+          <div class="introduct">
+            <div class="container">
+              <div class="content center">
+                <h5 class="t-black">ĐI KHẮP VIỆT NAM</h5>
+                <span class="line gold"></span>
+                <h2 class="t-content">
+                  NƠI ĐÂY SẼ CẬP NHẬT
+                  <span class="t-gold">BLOG</span>
+                  MỖI NGÀY
+                </h2>
+                <h5 class="t-black bot-content">
+                  ĐÓN CHỜ CÁC TIN TỨC TỪ NHỮNG ĐỊA ĐIỂM DU LỊCH
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END HEADER OF BLOG -->
+        <div class="container-blog center">
+          <div class="container-header">
+            <a href="blog.html" class="btn-more">Xem tất cả >></a>
+          </div>
+          <div class="container-news">
+            <div class="product-blog">
+              <a href=""
+                ><img
+                  src="img/kinh-nghiem-du-lich-sapa-cung-gia-dinh.jpg"
+                  alt=""
+                  class="blog-img"
+              /></a>
+              <div class="blog-content">
+                <a href="">
+                  <h4 class="">
+                    Kinh nghiệm du lịch sapa 3 ngày 2 đêm từ A - Z
+                  </h4>
+                </a>
+                <div class="blog-detail">
+                  <div class="info">By: Nguyễn Trí Tài</div>
+                  <div class="info2">
+                    <div class="date">
+                      <i class="fas fa-clock"></i>20/1/2022
+                    </div>
+                    <div class="view"><i class="fas fa-eye"></i>999 view</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-blog">
+              <a href=""
+                ><img src="img/da-lat-mua-xuan.jpg" alt="" class="blog-img"
+              /></a>
+              <div class="blog-content">
+                <a href="">
+                  <h4 class="">
+                    Thời điểm thích hợp nhất để đi Đà Lạt là mùa xuân
+                  </h4>
+                </a>
+                <div class="blog-detail">
+                  <div class="info">By: Nguyễn Trí Tài</div>
+                  <div class="info2">
+                    <div class="date">
+                      <i class="fas fa-clock"></i>20/1/2022
+                    </div>
+                    <div class="view"><i class="fas fa-eye"></i>999 view</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-blog">
+              <a href=""
+                ><img
+                  src="img/CamnangdulichVungTau.jpg"
+                  alt=""
+                  class="blog-img"
+              /></a>
+              <div class="blog-content">
+                <a href="">
+                  <h4 class="">
+                    Cất túi ngay cuốn cẩm nang du lịch Vũng Tàu 2022
+                  </h4>
+                </a>
+                <div class="blog-detail">
+                  <div class="info">By: Nguyễn Trí Tài</div>
+                  <div class="info2">
+                    <div class="date">
+                      <i class="fas fa-clock"></i>20/1/2022
+                    </div>
+                    <div class="view"><i class="fas fa-eye"></i>999 view</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footer-top">
+          <div class="contact-container center">
+            <div class="contact-top">
+              <div class="introduct">
+                <div class="container">
+                  <div class="content center">
+                    <h5 class="t-black">ĐI KHẮP VIỆT NAM</h5>
+                    <span class="line gold"></span>
+                    <h2 class="t-content">
+                      ĐỪNG QUÊN RẰNG CÒN CÓ
+                      <span class="t-gold">GOODTRIP</span>
+                    </h2>
+                    <h5 class="t-black bot-content">
+                      HÃY GIỮ LIÊN LẠC VỚI GOODTRIP
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="container-email">
+                <input
+                  id="form_email"
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Để lại Email của bạn*"
+                  required="required"
+                />
+                <input type="submit" name="submit" id="submit" value="Gửi" />
+              </div>
+            </div>
+            <div class="contact-bot">
+              <h5 class="t-black">GIỮ LIÊN LẠC VỚI CHÚNG TÔI</h5>
+              <span class="line gold"></span>
+              <div class="mxh">
+                <a href="" class="primary-btn"
+                  ><i class="fab fa-facebook-square" aria-hidden="true"></i
+                ></a>
+                <a href="" class="primary-btn"
+                  ><i class="fab fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a href="" class="primary-btn"
+                  ><i class="fab fa-twitter" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="footer-end">
+              2022 - Trang web được thiết kế bởi GruDev | Nguyễn Trí Tài ©
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
